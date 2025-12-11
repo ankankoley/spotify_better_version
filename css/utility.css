@@ -1,0 +1,80 @@
+.border{
+    /* border: 2px solid rgb(230, 61, 61); */
+    /* margin:3px ; */
+}
+
+.flex{
+    display: flex;
+
+
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.bg-black{
+    background-color: black;
+    color: white;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+
+.bg-grey{
+    /* background-color: #121212; */
+    background-color: #352929;
+    /* background-color: #a53636; */
+}
+
+.rounded{
+    border-radius: 7px;
+}
+
+.p-1{
+    padding: 10px;
+}
+
+.m-1{
+    margin: 5px;
+}
+
+/* Spotify-like Dark Scrollbar */
+
+:root {
+  --sb-track: #0f1115;      /* deep dark track */
+  --sb-thumb: #3a3f45;      /* gray thumb */
+  --sb-thumb-hover: #50565d;/* lighter on hover */
+  --sb-width: 10px;         /* thin scrollbar */
+}
+
+/* ---------- WebKit Browsers (Chrome, Edge, Safari) ---------- */
+*::-webkit-scrollbar {
+  width: var(--sb-width);
+  height: var(--sb-width);
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--sb-track);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb);
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--sb-thumb-hover);
+}
+
+/* ---------- Firefox ---------- */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--sb-thumb) var(--sb-track);
+}
