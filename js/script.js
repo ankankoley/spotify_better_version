@@ -200,7 +200,7 @@ async function main() {
 
     // load first album in defult 
 
-    await getsongs("kk")
+    await getsongs("ncs")
     playmusic(decodeURI(songs[0]).replaceAll(/\\/g, ""), true)
 
     // display all the the album on the page 
