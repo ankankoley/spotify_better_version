@@ -54,7 +54,7 @@ const playmusic = (track, pause = false) => {
 
 async function getsongs(folder) {
     currfolder = folder;
-    let a = await fetch(`http://127.0.0.1:3000/songs/${folder}/`)
+    let a = await fetch(`/songs/${folder}/`)
 
     let response = await a.text()
 
@@ -121,7 +121,7 @@ async function getsongs(folder) {
 
 
 async function displayalbum() {
-    let a = await fetch(`http://127.0.0.1:3000/songs/`)
+    let a = await fetch(`/songs/`)
 
     let response = await a.text()
 
@@ -144,7 +144,7 @@ async function displayalbum() {
 
 
 
-            let a = await fetch(`http://127.0.0.1:3000/songs/${folder}/info.json`)
+            let a = await fetch(`/songs/${folder}/info.json`)
 
             let response = await a.json()
             
