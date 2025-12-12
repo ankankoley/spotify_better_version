@@ -75,6 +75,8 @@ async function getsongs(folder) {
         }
     }
    
+    console.log(songs);
+    
     
 
     //show all the songs in the playlist 
@@ -197,7 +199,7 @@ async function main() {
 
     // load first album in defult 
 
-    await getsongs("arijit")
+    await getsongs("kk")
     playmusic(decodeURI(songs[0]).replaceAll(/\\/g, ""), true)
 
     // display all the the album on the page 
